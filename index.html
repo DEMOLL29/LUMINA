@@ -4,41 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUMINA</title>
-     <style>
-       body{ background-image: url(/STATIC/RECURSOS/BOSETO.png);
-        background-repeat: no-repeat;
-          height: 2000px
-          ;width: 300px;}
-      </style>
+    <link rel="stylesheet" href="STATIC/style.css">
+   
 </head>
 <body>
+    
    <section>
     <nav>
-       <div>
-         <img src="" alt="">
-        <button></button>
-        
-       </div> 
-       <ul>
-        <li>INICIO</li>
-        <li> NOSOTROS</li>
-        <li>MENU</li>
-        <li>PEDIDOS</li>
-        <li>TESTIMONIOS</li>
-       </ul>
-         </nav>
-     </section>
-    <section>
-      <div><h1>
-            LUMINA
-        </h1>
-        <span>
-            CADA BOCADO ES UNA EXPERIENCIA 
-        </span>
-     </div> 
+       <div id="sidebar" class="sidebar">
+                <ul>
+                <li>INICIO</li>
+                <li> NOSOTROS</li>
+                <li>MENU</li>
+                <li>PEDIDOS</li>
+                <li>TESTIMONIOS</li>
+                </ul>
+             </nav>
+   
+    <header class="topbar">
+
+    <div class="left">
+
+        <img src="/STATIC/IMAGENES/LOGO.png" 
+             id="logoMenu" 
+             class="logo">
+
+        <h1 class="title">UMINA</h1>
+
+    </div>
+
+    <div class="right">
+        <span class="num">numero</span>
+    </div>
+
+</header>
+
+
+<section class="section1">
+
 <div>
     <p>
-        numero
+        CADA BOCADO ES UNA EXPERIENCIA
     </p>
 </div>
     </section>
@@ -81,6 +87,18 @@
         </div>
     </div>
    </section>
+<script> document.getElementById("logoMenu").onclick = function(){
+    document.getElementById("sidebar").classList.toggle("active");
+document.addEventListener("click", function(e){
 
+    let menu = document.getElementById("sidebar");
+    let logo = document.getElementById("logoMenu");
+    if(!menu.contains(e.target) && !logo.contains(e.target)){
+        menu.classList.remove("active");
+    }
+
+}); 
+
+};</script>
 </body>
 </html>

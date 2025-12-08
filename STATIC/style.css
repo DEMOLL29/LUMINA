@@ -1,0 +1,108 @@
+body{
+    background-image: url(/STATIC/RECURSOS/BOSETO.png);
+    background-repeat: no-repeat;
+}
+
+
+.logo{
+    width: 50px;
+    height: 50px;
+    cursor:pointer;
+}
+
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:-250px;
+    width:250px;
+    height:100%;
+    background:#51523f;
+    color:white;
+    transition:.3s;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:20px;
+}
+
+.sidebar li{
+    margin:15px 0;
+    font-size:20px;
+}
+
+
+.sidebar.active{
+    left:0;
+}
+section {
+    background-color: #e3e0d3;
+}
+body { background-color: #51523f;}
+body {
+    background-image: none;
+}
+.section1{background-image:url(/STATIC/IMAGENES/seccion1.png);background-repeat: repeat;
+min-height: 400px; 
+    padding: 60px 20px;}
+   
+    .section1 div:first-child{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.title{
+    font-size:40px;
+}
+
+.num{
+    margin-left: 20px;
+    font-size: 30px;
+}
+.topbar{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    gap: 1000px;
+    align-items:center;
+    padding:10px;
+}
+
+
+.topbar .left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+
+
+.logo{
+    width:55px;
+    cursor:pointer;
+}
+
+
+.title{
+    font-size:32px;
+    margin:0;
+}
+
+ 
+.topbar .right .num{
+    font-size:18px;
+}
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+section {
+    padding: 30px;
+}
+
+section {
+    margin-top: 10px;
+}
