@@ -10,17 +10,15 @@
 <body>
     
    <section>
-    <nav>
-       <div id="sidebar" class="sidebar">
-                <ul>
-                <li>INICIO</li>
-                <li> NOSOTROS</li>
-                <li>MENU</li>
-                <li>PEDIDOS</li>
-                <li>TESTIMONIOS</li>
-                </ul>
-             </nav>
-   
+<div id="sidebar" class="sidebar">
+       <nav> <ul>
+               <li><a href="#" onclick="mostrarSeccion('inicio')">INICIO</a></li>
+               <li><a href="#" onclick="mostrarSeccion('nosotros')">NOSOTROS</a></li>
+               <li><a href="#" onclick="mostrarSeccion('menu')">MENU</a></li>
+               <li><a href="#" onclick="mostrarSeccion('pedidos')">PEDIDOS</a></li>
+               <li><a href="#" onclick="mostrarSeccion('testimonios')">TESTIMONIOS</a></li>
+           </ul>
+       </nav> </div>
     <header class="topbar">
 
     <div class="left">
@@ -34,27 +32,33 @@
     </div>
 
     <div class="right">
-        <span class="num">numero</span>
+        <span class="num">CONTACTO:    321-639-70-52</span>
     </div>
 
 </header>
 
 
-<section class="section1">
+<section class="section1" id="INICIO">
 
-<div>
-    <p>
-        CADA BOCADO ES UNA EXPERIENCIA
-    </p>
+<div class="contenedor1">
+    <h4 class="SUBTIT
+    ">
+        𝑪𝑨𝑫𝑨 𝑩𝑶𝑪𝑨𝑫𝑶 𝑬𝑺 𝑼𝑵𝑨 𝑬𝑿𝑷𝑬𝑹𝑰𝑬𝑵𝑪𝑰𝑨
+</H4
+>
+<P class="PARRAFO1">
+    Le damos la bienvenida a nuestro universo de postres, donde la sofisticación y la dulzura se encuentran en perfecta armonía. Permítase explorar sabores que encantan y texturas que enamoran.
+</P>
 </div>
     </section>
-   <section>
-    <div>
+   <section class="NOSOTROS" id="OCULTO">
+   
+<div>
         <h2>sobre nosotros</h2>
         <div>
             <h5>bienvenido</h5>
             <p>
-                contenido
+                Lumina es un sueño hecho realidad por nuestra familia. Cada producto que creamos lleva no solo ingredientes de la más alta calidad, sino también el cariño y la dedicación que solo un emprendimiento familiar puede ofrecer. Desde nuestra cocina, compartimos con ustedes la pasión que nos une, asegurando que cada bocado sea una extensión de nuestro hogar
             </p>
             <div>
                 <img src="" alt="">
@@ -62,7 +66,7 @@
         </div>
     </div>
    </section>
-   <section>
+   <section id="MENU" class="OCULTO">
     <div><H3> MENU,</H3></div>
     <div>
         <div></div>
@@ -77,7 +81,7 @@
         <div></div>
     </div>
    </section>
-   <section>
+   <section id="PEDIDOS">
     <div>
         <h3>ordenes</h3>
         <div>
@@ -87,6 +91,24 @@
         </div>
     </div>
    </section>
+    <section id="TESTIMONIOS">
+        <div>
+            <h3>testimonios</h3>
+            <div>
+                <div>
+                    <p>cliente 1</p>
+                    </div>
+                <div>
+                    <p>cliente 2</p>
+                    </div>
+                <div>
+                    <p>cliente 3</p>
+
+                </div>
+
+            </div>
+                
+     
 <script> document.getElementById("logoMenu").onclick = function(){
     document.getElementById("sidebar").classList.toggle("active");
 document.addEventListener("click", function(e){
