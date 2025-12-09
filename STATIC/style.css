@@ -18,22 +18,25 @@ body{
     width:250px;
     height:100%;
     background:#51523f;
-    color:white;
+    color:rgb(247, 245, 245);
     transition:.3s;
 }
+.sidebar ul li a {
+    color: rgb(215, 207, 207);
+}
 
-.sidebar ul{
+.sidebar ul{ color: #cccdc3;
     list-style:none;
     padding:20px;
 }
 
-.sidebar li{
+.sidebar li{color: #cccdc3;
     margin:15px 0;
     font-size:20px;
 }
 
 
-.sidebar.active{
+.sidebar.active{ color: #dcddd1;
     left:0;
 }
 section {
@@ -44,8 +47,8 @@ body {
     background-image: none;
 }
 .section1{background-image:url(/STATIC/IMAGENES/seccion1.png);background-repeat: repeat;
-min-height: 400px; 
-    padding: 60px 20px;}
+min-height: 650px; 
+    padding: 70px 30px;}
    
     .section1 div:first-child{
     display:flex;
@@ -54,28 +57,21 @@ min-height: 400px;
     gap:20px;
 }
 
-.title{ color: #515240;
+.title{ color: #dcddd1;
     font-size:40px;
 }
 
-.num{ color: #515240;
-    margin-left: 20px;
-    font-size: 30px;
-}
-.topbar{
-    width:100%;
-    display:flex;
-    justify-content:flex-start;
-    gap: 900px;
-    align-items:center;
-    padding:10px;
+.num{ color: #cccdc3;
+    margin-left: 0px;
+    font-size: -30px;
+    gap: 140px;
 }
 
-
+    
 .topbar .left{
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:0px;
 }
 
 
@@ -120,8 +116,33 @@ text-align: center;
 }
 .contenedor1 p{font-size: 1.2em; line-height: 1.5em;}
 
+.topbar {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+     display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 60px;
+    padding: 0 20px;
+    gap: 150px;
 
+     
+}
 
-    
+body {
+    padding-top: 37px; 
+}
 
-    
+.section1, #NOSOTROS, #MENU, #PEDIDOS, #TESTIMONIOS {
+    display: none;
+}
+
+#INICIO {
+    display: block; 
+}
+
+.topbar .title {
+    font-size: 2em; 
+    margin: 1px;
+}

@@ -8,9 +8,7 @@
    
 </head>
 <body>
-    
-   <section>
-<div id="sidebar" class="sidebar">
+    <div id="sidebar" class="sidebar">
        <nav> <ul>
                <li><a href="#" onclick="mostrarSeccion('inicio')">INICIO</a></li>
                <li><a href="#" onclick="mostrarSeccion('nosotros')">NOSOTROS</a></li>
@@ -20,19 +18,14 @@
            </ul>
        </nav> </div>
     <header class="topbar">
-
-    <div class="left">
-
+      <div class="left">
         <img src="/STATIC/IMAGENES/LOGO.png" 
              id="logoMenu" 
              class="logo">
-
-        <h1 class="title">UMINA</h1>
-
+         <h1 class="title">UMINA</h1>
     </div>
-
     <div class="right">
-        <span class="num">CONTACTO:    321-639-70-52</span>
+        <span class="num"></span>
     </div>
 
 </header>
@@ -47,11 +40,25 @@
 </H4
 >
 <P class="PARRAFO1">
-    Le damos la bienvenida a nuestro universo de postres, donde la sofisticación y la dulzura se encuentran en perfecta armonía. Permítase explorar sabores que encantan y texturas que enamoran.
+     <br>
+       <br>
+         
+    Bienvenido a un viaje donde lo ordinario desaparece. Hemos elevado la repostería a una forma de arte, combinando la sutileza de los ingredientes con la audacia del sabor. Permítase un momento de puro placer y déjese cautivar por nuestras exquisitas creaciones
+    <br>
+      <br>
+        <br>
+          <br>
+
+      Aquí, la repostería trasciende lo dulce para convertirse en una experiencia sublime. Le invitamos a cruzar el umbral donde el sabor es un recuerdo y la textura una promesa. Cada creación es un suspiro, un instante de lujo efímero diseñado para transformar su día.
+        <br>
+          <br>
+            <br>
+              
+     universo de postres, donde la sofisticación y la dulzura se encuentran en perfecta armonía. Permítase explorar sabores que encantan y texturas que enamoran.
 </P>
 </div>
     </section>
-   <section class="NOSOTROS" id="OCULTO">
+   <section class="OCULTO" id="NOSOTROS">
    
 <div>
         <h2>sobre nosotros</h2>
@@ -66,7 +73,7 @@
         </div>
     </div>
    </section>
-   <section id="MENU" class="OCULTO">
+   <section id="MEN" class="OCULTO">
     <div><H3> MENU,</H3></div>
     <div>
         <div></div>
@@ -117,10 +124,49 @@ document.addEventListener("click", function(e){
     let logo = document.getElementById("logoMenu");
     if(!menu.contains(e.target) && !logo.contains(e.target)){
         menu.classList.remove("active");
-    }
+        
+    }}); 
 
-}); 
 
 };</script>
+<script>
+    function mostrarSeccion(idSeccion) {
+        const secciones = document.querySelectorAll('section');
+        
+        secciones.forEach(seccion => {
+            seccion.style.display = 'none';
+        });
+
+        const seccionMostrar = document.getElementById(idSeccion.toUpperCase());
+
+        if (seccionMostrar) {
+            seccionMostrar.style.display = 'block';
+        }
+
+        const sidebar = document.getElementById("sidebar");
+        if (sidebar.classList.contains("active")) {
+            sidebar.classList.remove("active");
+        }
+    }
+
+    document.getElementById("logoMenu").onclick = function() {
+        document.getElementById("sidebar").classList.toggle("active");
+    };
+
+    document.addEventListener("click", function(e) {
+        let menu = document.getElementById("sidebar");
+        let logo = document.getElementById("logoMenu");
+
+        if (!menu.contains(e.target) && !logo.contains(e.target)) {
+            menu.classList.remove("active");
+        }
+    });
+
+    window.onload = function() {
+        mostrarSeccion('inicio');
+    };
+</script>
+
+
 </body>
 </html>
