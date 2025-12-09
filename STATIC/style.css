@@ -146,3 +146,22 @@ body {
     font-size: 2em; 
     margin: 1px;
 }
+.img2{ background-image: url(/STATIC/IMAGENES/img2.png);
+    min-height: 650px; 
+
+    padding: 70px 30px;}
+
+    .subtit2{background-color: #51523f;
+
+        color:#000000
+        ;margin: 70px;
+    padding: 30px;
+display: inline-block;
+font-size: 2em;
+    font-weight: bold;
+
+
+   background-color: #51523f;
+        max-width: 500px;
+    margin: 60px;
+color: rgb(0, 0, 0);}
