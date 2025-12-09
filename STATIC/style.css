@@ -165,3 +165,39 @@ font-size: 2em;
         max-width: 500px;
     margin: 60px;
 color: rgb(0, 0, 0);}
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 80px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.postre-nombre {
+    font-family: serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    color: #444;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.postre-desc {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+#MENU {
+    background-color: #E3E0D3;
+    padding: 60px 20px;
+}
+.r15{color: #515240;
+    font-size: 3em;
+}
