@@ -201,3 +201,38 @@ color: rgb(0, 0, 0);}
 .r15{color: #515240;
     font-size: 3em;
 }
+.formulario-pedido-simple {
+    max-width: 350px; 
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 5px;
+}
+
+.formulario-pedido-simple label {   display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.formulario-pedido-simple input,
+.formulario-pedido-simple textarea {  width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;}
+
+.formulario-pedido-simple button[type="submit"]   { width: 100%;
+    padding: 10px;
+    background-color: #51523f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;}
+
+.nota-pedido { text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 15px;
+}
